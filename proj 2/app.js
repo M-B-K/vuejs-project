@@ -10,6 +10,7 @@ const app = Vue.createApp({
   methods: {
     changetitle() {
       this.Title = document.querySelector("#app input.title").value;
+      document.querySelector("#app input.title").value = " ";
     },
   },
 });
