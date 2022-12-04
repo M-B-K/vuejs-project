@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: darkcyan;
+  font-family: sans-serif;
+  text-align: center;
+}
+#app {
+  width: 300px;
+  min-height: 300px;
+  border: 1px solid darkcyan;
+  border-radius: 4px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#app .num {
+  margin: 10px 0px;
+}
+
+#app .counting {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#app button {
+  margin: 10px 0px;
+  background-color: darkcyan;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+#app button.toggle {
+  width: 100%;
+}
+#app button:hover {
+  background-color: rgb(13, 114, 114);
+}
+
+#app input {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 10px;
+  color: darkcyan;
+  border: 1px solid darkcyan;
+  border-radius: 4px;
+}
+
+#app input:focus,
+#app input:hover {
+  outline: none;
+}

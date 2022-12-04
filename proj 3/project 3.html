@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>VueJs 3</title>
+  </head>
+  <body>
+    <div id="app">
+      <div v-if="show">
+        <h1>{{ Title }}</h1>
+        <p class="num">Counter: {{ Counter }}</p>
+        <p>Date: {{ date }}</p>
+        <div class="counting">
+          <button @click="Counter++">Inc Num</button>
+          <button @click="Counter--">Dec Num</button>
+        </div>
+        <input type="date" name="date" id="date" v-model="date" />
+        <input
+          type="text"
+          name="text"
+          id="text"
+          class="title"
+          @keyup.enter="changetitle"
+        />
+      </div>
+
+      <button @click="toggleShowBox" class="toggle">
+        <span v-show="show">Hide Content</span>
+        <span v-show="!show">Show Content</span>
+      </button>
+    </div>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

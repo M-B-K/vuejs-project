@@ -118,3 +118,21 @@ or
 or
 
 > @keyup.enter="....." // do something or function Name when click enter
+
+#### if condition
+
+```html
+<span v-if="show">Hide Content</span> <span v-if="!show">Show Content</span>
+```
+
+or
+
+```html
+<span v-if="show">Hide Content</span> <span v-else>Show Content</span>
+```
+
+### show and hide element (css not JS)
+
+```html
+<span v-show="show">Hide Content</span> <span v-show="!show">Show Content</span>
+```
